@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ title }}</h1>
+
+    {% if description %}
+      <p class="post-description">{{ description }}</p>
+    {% endif %}
+
+    {% if page.date %}
+      <p class="post-meta">{{ page.date | postDate }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+</article>

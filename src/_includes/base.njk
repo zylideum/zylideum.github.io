@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{% if title %}{{ title }} · {% endif %}ashton richards</title>
+    <meta name="description" content="{{ description or 'Personal site and blog' }}" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/prismjs@1.29.0/themes/prism-tomorrow.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell">
+        <nav class="site-nav">
+          <a href="/" class="brand">ashton richards</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="shell">
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
