@@ -13,7 +13,7 @@ permalink: "/blog/close-the-loop/"
 
 once upon a time, i was an offensive security engineer who popped some cool shells and had stories to tell about it.
 
-for others in the security space, these stories were often helpful, enlightening, maybe interesting. but there was *some* value in telling these stories, showing the tecnniques, talking about how to pwn their own targets in the future. sharing our collective exploits **is still valuable** for us hackers.
+for others in the security space, these stories were often helpful, enlightening, maybe interesting. but there was *some* value in telling these stories, showing the techniques, talking about how to pwn their own targets in the future. sharing our collective exploits **is still valuable** for us hackers.
 
 then i pivoted back to application security and building. helping developers secure apps, architecting secure design patterns, embedding in their workflows.
 
