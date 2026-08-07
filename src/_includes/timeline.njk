@@ -1,0 +1,35 @@
+<div class="timeline">
+  {% for item in items %}
+    <div class="timeline__item">
+      <div class="timeline__marker" aria-hidden="true"></div>
+
+      <div class="timeline__content">
+        <time datetime="{{ item.date }}">
+          {{ item.label }}
+        </time>
+
+        {% if item.title %}
+          <h3>{{ item.title }}</h3>
+        {% endif %}
+
+        {% if item.text %}
+          <p>{{ item.text }}</p>
+        {% endif %}
+
+        {% if item.image %}
+          <figure class="timeline__media">
+            <img
+              src="{{ item.image }}"
+              alt="{{ item.alt or '' }}"
+              loading="lazy"
+            >
+
+            {% if item.caption %}
+              <figcaption>{{ item.caption }}</figcaption>
+            {% endif %}
+          </figure>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -314,3 +314,90 @@ hr {
 .contact-links a:hover {
   color: var(--accent);
 }
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: 0.55rem;
+  width: 2px;
+  background: #d0d7de;
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: -2.3rem;
+  top: 0.35rem;
+
+  width: 0.7rem;
+  height: 0.7rem;
+
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--background, white);
+}
+
+.timeline__content time {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+.timeline__content h3 {
+  margin: 0 0 0.35rem;
+}
+
+.timeline__content p {
+  margin: 0;
+}
+
+.timeline__media {
+  margin: 1rem 0 0;
+}
+
+.timeline__media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.timeline__media figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+.timeline__media img {
+  max-width: min(100%, 42rem);
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 2rem 0;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
